@@ -462,10 +462,10 @@
 - 答案页安全区修复后，`:app:compileDebugKotlin` 和 `:app:assembleDebug` 均通过。
 - 答案页一键生成悬浮窗任务后，`:app:compileDebugKotlin` 和 `:app:assembleDebug` 均通过。
 - Miuix 模糊实验性调整和答案页图形层优化后，编译与打包均通过。
-## 二十五、日志文件路径调整
+
+## 四十三、日志文件路径调整
 
 - 自动化日志文件名由 `fe_test.txt` 改为 `EplusDebug.txt`。
 - 新路径为 `/sdcard/Download/EplusDebug.txt`。
-- 设置页中的日志说明同步更新。
 - 旧文件不会被自动删除，只是不再继续写入。
 - Kotlin 编译检查通过。
