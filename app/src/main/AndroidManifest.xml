@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 全文件访问权限 (Android 11+) -->
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    
+    <!-- 悬浮窗权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- 自动化测试悬浮窗前台服务 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    
+    <!-- 网络权限（用于检查更新等） -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <!-- 应用列表权限 (查询已安装应用) -->
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+
+    <application
+        android:name=".FeApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:enableOnBackInvokedCallback="true"
+        android:theme="@style/Theme.Fe">
+        
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AnswerActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe.Transparent" />
+
+
+        <activity
+            android:name=".RemoteContentActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe.Transparent" />
+
+        <activity
+            android:name=".ActivationActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe.Transparent" />
+
+        <activity
+            android:name=".CloudActivationActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe.Transparent" />
+
+        <activity
+            android:name=".ChangyanWebLoginActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe.Transparent" />
+
+        <activity
+            android:name=".GeneralSettingsActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe.Transparent" />
+
+        <activity
+            android:name=".TestFeature1Activity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe.Transparent" />
+
+        <activity
+            android:name=".ThemeSettingsActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe.Transparent" />
+
+        <activity
+            android:name=".LegalActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe.Transparent" />
+
+        <activity
+            android:name=".AnswerOpaqueActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe" />
+
+
+        <activity
+            android:name=".RemoteContentOpaqueActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe" />
+
+        <activity
+            android:name=".ActivationOpaqueActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe" />
+
+        <activity
+            android:name=".CloudActivationOpaqueActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe" />
+
+        <activity
+            android:name=".ChangyanWebLoginOpaqueActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe" />
+
+        <activity
+            android:name=".GeneralSettingsOpaqueActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe" />
+
+        <activity
+            android:name=".TestFeature1OpaqueActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe" />
+
+        <activity
+            android:name=".ThemeSettingsOpaqueActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe" />
+
+        <activity
+            android:name=".LegalOpaqueActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe" />
+
+        <activity
+            android:name=".AnswerKernelSuClassicActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe.KernelSuClassic" />
+
+
+        <activity
+            android:name=".RemoteContentKernelSuClassicActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe.KernelSuClassic" />
+
+        <activity
+            android:name=".ActivationKernelSuClassicActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe.KernelSuClassic" />
+
+        <activity
+            android:name=".CloudActivationKernelSuClassicActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe.KernelSuClassic" />
+
+        <activity
+            android:name=".ChangyanWebLoginKernelSuClassicActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe.KernelSuClassic" />
+
+        <activity
+            android:name=".GeneralSettingsKernelSuClassicActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe.KernelSuClassic" />
+
+        <activity
+            android:name=".TestFeature1KernelSuClassicActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe.KernelSuClassic" />
+
+        <activity
+            android:name=".ThemeSettingsKernelSuClassicActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe.KernelSuClassic" />
+
+        <activity
+            android:name=".LegalKernelSuClassicActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:enableOnBackInvokedCallback="true"
+            android:theme="@style/Theme.Fe.KernelSuClassic" />
+        
+        <!-- Shizuku Provider - 必须添加 -->
+        <provider
+            android:name="rikka.shizuku.ShizukuProvider"
+            android:authorities="${applicationId}.shizuku"
+            android:multiprocess="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+        <service
+            android:name=".AutomationOverlayService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse|mediaProjection">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="User initiated floating control panel for accessibility research" />
+        </service>
+
+        <service
+            android:name=".AutomationAccessibilityService"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/automation_accessibility_service" />
+        </service>
+        
+        <!-- FileProvider -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        
+    </application>
+
+</manifest>

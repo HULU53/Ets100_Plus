@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">E+</string>
+    <string name="automation_accessibility_service_description">用于研究页面文字识别和用户确认后的屏幕操作</string>
+</resources>

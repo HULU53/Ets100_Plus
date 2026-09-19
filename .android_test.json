@@ -1,0 +1,13 @@
+{
+  "project_root": "G:\\Codex\\fe",
+  "app_module": "app",
+  "manifest_package": "",
+  "package_name": "",
+  "launch_activity": ".MainActivity",
+  "default_variant": "debug",
+  "flavors": [],
+  "build_types": [
+    "debug",
+    "release"
+  ]
+}
